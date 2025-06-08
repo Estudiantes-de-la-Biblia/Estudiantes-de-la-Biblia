@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="img/logo.jpg" type="image/jpg">
+
+    <title>Estudiantes de la biblia</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <br>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE NOSOTROS</a></li>
+                            <li><a href="#contenedor-principal" onclick="seleccionar(this)">TRANSCRIPCIONES</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">LIBROS</a></li>
+                            <li><a href="#contenedor-audios" onclick="seleccionar(this)">AUDIOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">REFLEXION</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Estudiantes de la biblia</h2>
+                <p class="descripcion">Toda la Escritura es inspirada por Dios, y útil para enseñar, para redargüir,
+                    para corregir, para instruir en justicia, a fin de que el hombre de Dios sea perfecto, enteramente
+                    preparado para toda buena obra.</p>
+                <a href="#contenedor-principal">Ir a Transcripciones</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/Sobrenosotros.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Nosotros</p>
+            <h2>Hola <span>Estudiantes de la biblia</span> </h2>
+            <p>Estudiantes de la Biblia es un grupo dedicado al estudio profundo y reflexivo de la Palabra de Dios.
+                Nuestro propósito es crecer en conocimiento, fe y obediencia a través del estudio constante de las
+                Escrituras, compartiendo lo que aprendemos y aplicándolo a nuestra vida diaria.
+                Nos reunimos con un espíritu de humildad y amor, creyendo que toda la Escritura es inspirada por Dios y
+                útil para guiarnos en cada aspecto de nuestra vida. No buscamos imponer ideas, sino descubrir juntos la
+                verdad que transforma corazones y renueva mentes.
+                Creemos que estudiar la Biblia en comunidad fortalece nuestra relación con Dios y con los demás. Por
+                eso, abrimos este espacio para compartir enseñanzas, recursos, reflexiones y todo aquello que edifique
+                al cuerpo de Cristo.
+            </p>
+            <p>"Escudriñad las Escrituras..." (Juan 5:39)</p>
+
+        </div>
+    </section>
+
+
+
+    <div class="contenedor-skills" id="contenedor-principal">
+        <!-- Vista de todos los libros -->
+        <div id="vista-libros">
+            <h1>Transcripciones</h1>
+            <br>
+            <br>
+            <div class="libros-contenedor" id="lista-libros">
+                <ul class="columna">
+                    <a href="https://es.slideshare.net/saved/25014136/genesis" target="_blank"><li>Genesis</li></a>
+                    <a href="https://es.slideshare.net/saved/25014427/exodo" target="_blank"><li>Exodo</li></a>
+                    <li class="sin-contenido">Levítico</li>
+                    <li class="sin-contenido">Números</li>
+                    <li class="sin-contenido">Deuteronomio</li>
+                    <li class="sin-contenido">Josué</li>
+                    <li class="sin-contenido">Jueces</li>
+                    <li class="sin-contenido">Rut</li>
+                    <li class="sin-contenido">1 Samuel</li>
+                    <li class="sin-contenido">2 Samuel</li>
+                </ul>
+                <ul class="columna">
+                    <li class="sin-contenido">1 Reyes</li>
+                    <li class="sin-contenido">2 Reyes</li>
+                    <li class="sin-contenido">1 Crónicas</li>
+                    <li class="sin-contenido">2 Crónicas</li>
+                    <li class="sin-contenido">Esdras</li>
+                    <li class="sin-contenido">Nehemías</li>
+                    <li class="sin-contenido">Ester</li>
+                    <li class="sin-contenido">Job</li>
+                    <li class="sin-contenido">Salmos</li>
+                    <li class="sin-contenido">Proverbios</li>
+                </ul>
+                <ul class="columna">
+                    <li class="sin-contenido">Eclesiastés</li>
+                    <li class="sin-contenido">Cantares</li>
+                    <li class="sin-contenido">Isaías</li>
+                    <li class="sin-contenido">Jeremías</li>
+                    <li class="sin-contenido">Lamentaciones</li>
+                    <li class="sin-contenido">Ezequiel</li>
+                    <li class="sin-contenido">Daniel</li>
+                    <li class="sin-contenido">Oseas</li>
+                    <li class="sin-contenido">Joel</li>
+                    <li class="sin-contenido">Amós</li>
+                </ul>
+                <ul class="columna">
+                    <li class="sin-contenido">Abdías</li>
+                    <li class="sin-contenido">Jonás</li>
+                    <li class="sin-contenido">Miqueas</li>
+                    <li class="sin-contenido">Naúm</li>
+                    <li class="sin-contenido">Habacuc</li>
+                    <li class="sin-contenido">Sofonías</li>
+                    <li class="sin-contenido">Hageo</li>
+                    <li class="sin-contenido">Zacarías</li>
+                    <li class="sin-contenido">Malaquías</li>
+                </ul>
+                <ul class="columna">
+                    <a href="https://es.slideshare.net/saved/25014007/evangelio-de-mateo" target="_blank"><li>Mateo</li></a>
+                    <a href="https://es.slideshare.net/saved/25014145/evangelio-de-marcos" target="_blank"><li>Marcos</li></a>
+                    <a href="https://es.slideshare.net/saved/25014354/evangelio-de-lucas" target="_blank"><li>Lucas</li></a>
+                    <a href="https://es.slideshare.net/saved/25014304/evangelio-de-juan" target="_blank"><li>Juan</li></a>
+                    <a href="https://es.slideshare.net/saved/25014479/libro-de-los-hechos" target="_blank"><li>Hechos</li></a>
+                    <a href="https://es.slideshare.net/saved/25014552/romanos" target="_blank"><li>Romanos</li></a>
+                    <a href="https://es.slideshare.net/saved/25014591/1-corintios" target="_blank"><li>1 Corintios</li></a>
+                    <a href="https://es.slideshare.net/saved/25014661/2-corintios" target="_blank"><li>2 Corintios</li></a>
+                    <a href="https://es.slideshare.net/saved/25014036/galatas" target="_blank"><li>Galatas</li></a>
+                    <li class="sin-contenido">Efesios</li>
+                </ul>
+                <ul class="columna">
+                    <li class="sin-contenido">Filipenses</li>
+                    <li class="sin-contenido">Colosenses</li>
+                    <li class="sin-contenido">1 Tesalonicenses</li>
+                    <a href="https://es.slideshare.net/saved/25014153/2-de-tesalonicenses" target="_blank"><li>2 Tesalonicenses</li></a>
+                    <li class="sin-contenido">1 Timoteo</li>
+                    <li class="sin-contenido">2 Timoteo</li>
+                    <li class="sin-contenido">Tito</li>
+                    <li class="sin-contenido">Filemón</li>
+                    <li class="sin-contenido">Hebreos</li>
+                    <li class="sin-contenido">Santiago</li>
+                </ul>
+                <ul class="columna">
+                    <li class="sin-contenido">1 Pedro</li>
+                    <li class="sin-contenido">2 Pedro</li>
+                    <li class="sin-contenido">1 Juan</li>
+                    <li class="sin-contenido">2 Juan</li>
+                    <li class="sin-contenido">3 Juan</li>
+                    <li class="sin-contenido">Judas</li>
+                    <li class="sin-contenido">Apocalipsis</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Libros</h3>
+        <div class="carrusel-wrapper">
+            <button class="btn-carrusel izquierda">⬅</button>
+            <div class="carrusel-libros">
+                <div class="contenedor-libros">
+                    <a href="https://a.co/d/97aIZtc" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro1.jpg" alt="">
+                            <div class="info">
+                                <h4>Mateo</h4>
+                                <p>El evangelio de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/4YUUyGb" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro2.jpg" alt="">
+                            <div class="info">
+                                <h4>Marcos</h4>
+                                <p>El evangelio de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/8Tiuu2w" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro3.jpg" alt="">
+                            <div class="info">
+                                <h4>Lucas</h4>
+                                <p>El evangelio de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/6t5assS" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro4.jpg" alt="">
+                            <div class="info">
+                                <h4>Juan</h4>
+                                <p>El evangelio de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/9AhhsA9" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro5.jpg" alt="">
+                            <div class="info">
+                                <p>Hechos de los apostoles</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/dmq4VeM" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro6.jpg" alt="">
+                            <div class="info">
+                                <h4>Romanos</h4>
+                                <p>El evangelio de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/3M1YBqJ" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro7.jpg" alt="">
+                            <div class="info">
+                                <h4>Corintios</h4>
+                                <p>El evangelio de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/fwYSLnM" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro8.jpg" alt="">
+                            <div class="info">
+                                <h4>Exodo</h4>
+                                <p>Verso por verso</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/2m4eASB" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro9.jpg" alt="">
+                            <div class="info">
+                                <h4>El diezmo</h4>
+                                <p>Conforme a la doctrina de Yeshua</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/gacDZd6" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro10.jpg" alt="">
+                            <div class="info">
+                                <h4>Sincretismo religioso</h4>
+                                <p>Antiguo Testamento</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://a.co/d/4Uiuqg7" target="_blank">
+                        <div class="libro">
+                            <div class="overlay"></div>
+                            <img src="img/Libro11.jpg" alt="">
+                            <div class="info">
+                                <h4>Las fiestas de primavera</h4>
+                                <p>Antiguo Testamento</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="btn-carrusel derecha">➡</button>
+        </div>
+    </section>
+    <div class="contenedor-audios" id="contenedor-audios">
+        <!-- Vista de todos los libros -->
+        <div id="vista-audios">
+            <h1>Audios</h1>
+            <br>
+            <br>
+            <div class="audios-contenedor" id="lista-audios">
+                <ul class="columna">
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/genesis" target="_blank"><li>Genesis</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/exodo" target="_blank"><li>Exodo</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/levitico" target="_blank"><li>Levítico</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/numeros" target="_blank"><li>Numeros</li></a>
+                    <li>Deuteronomio</li>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/josue" target="_blank"><li>Josué</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/libro-de-los-jueces" target="_blank"><li>Jueces</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/rut" target="_blank"><li>Rut</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/1-samuel" target="_blank"><li>1 Samuel</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/2-samuel" target="_blank"><li>2 Samuel</li></a>
+                </ul>
+                <ul class="columna">
+                    <li class="sin-contenido">1 Reyes</li>
+                    <li class="sin-contenido">2 Reyes</li>
+                    <li class="sin-contenido">1 Crónicas</li>
+                    <li class="sin-contenido">2 Crónicas</li>
+                    <li class="sin-contenido">Esdras</li>
+                    <li class="sin-contenido">Nehemías</li>
+                    <li class="sin-contenido">Ester</li>
+                    <li class="sin-contenido">Job</li>
+                    <li class="sin-contenido">Salmos</li>
+                    <li class="sin-contenido">Proverbios</li>
+                </ul>
+                <ul class="columna">
+                    <li class="sin-contenido">Eclesiastés</li>
+                    <li class="sin-contenido">Cantares</li>
+                    <li class="sin-contenido">Isaías</li>
+                    <li class="sin-contenido">Jeremías</li>
+                    <li class="sin-contenido">Lamentaciones</li>
+                    <li class="sin-contenido">Ezequiel</li>
+                    <li class="sin-contenido">Daniel</li>
+                    <li class="sin-contenido">Oseas</li>
+                    <li class="sin-contenido">Joel</li>
+                    <li class="sin-contenido">Amós</li>
+                </ul>
+                <ul class="columna">
+                    <li class="sin-contenido">Abdías</li>
+                    <li class="sin-contenido">Jonás</li>
+                    <li class="sin-contenido">Miqueas</li>
+                    <li class="sin-contenido">Naúm</li>
+                    <li class="sin-contenido">Habacuc</li>
+                    <li class="sin-contenido">Sofonías</li>
+                    <li class="sin-contenido">Hageo</li>
+                    <li class="sin-contenido">Zacarías</li>
+                    <li class="sin-contenido">Malaquías</li>
+                </ul>
+                <ul class="columna">
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/evangelio-de-mateo" target="_blank"><li>Mateo</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/evangelio-de-marcos" target="_blank"><li>Marcos</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/evangelio-de-lucas" target="_blank"><li>Lucas</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/evangelio-de-juan" target="_blank"><li>Juan</li></a>
+                    <li class="sin-contenido">Hechos</li>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/romanos" target="_blank"><li>Romanos</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/1-carta-a-los-corintios" target="_blank"><li>1 Corintios</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/2-corintios" target="_blank"><li>2 Corintios</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/galatas" target="_blank"><li>Gálatas</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/efesios" target="_blank"><li>Efesios</li></a>
+                </ul>
+                <ul class="columna">
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/filipenses" target="_blank"><li>Filipenses</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/colosenses" target="_blank"><li>Colosenses</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/1-tesalonicenses" target="_blank"><li>1 Tesalonicenses</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/2-tesalonicenses-1" target="_blank"><li>2 Tesalonicenses</li></a>
+                    <a href="https://soundcloud.com/talmid-yisrael/sets/1-timoteo" target="_blank"><li>1 Timoteo</li></a>
+                    <li class="sin-contenido">2 Timoteo</li>
+                    <li class="sin-contenido">Tito</li>
+                    <li class="sin-contenido">Filemón</li>
+                    <li class="sin-contenido">Hebreos</li>
+                    <li class="sin-contenido">Santiago</li>
+                </ul>
+                <ul class="columna">
+                    <li class="sin-contenido">1 Pedro</li>
+                    <li class="sin-contenido">2 Pedro</li>
+                    <li class="sin-contenido">1 Juan</li>
+                    <li class="sin-contenido">2 Juan</li>
+                    <li class="sin-contenido">3 Juan</li>
+                    <li class="sin-contenido">Judas</li>
+                    <li class="sin-contenido">Apocalipsis</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">1 Corintios. 2:5-10</h3>
+        <div class="contenedor-form">
+            <p>…para que vuestra fe no esté fundada en la sabiduría de los hombres, sino en el poder de Dios. Sin
+                embargo, hablamos sabiduría entre los que han alcanzado madurez; y sabiduría, no de este siglo, ni
+                de
+                los príncipes de este siglo, que perecen. Mas hablamos sabiduría de Dios en misterio, la sabiduría
+                oculta, la cual Dios predestinó antes de los siglos para nuestra gloria, la que ninguno de los
+                príncipes
+                de este siglo conoció; porque si la hubieran conocido, nunca habrían crucificado al Señor de gloria.
+                Antes bien, como está escrito: Cosas que ojo no vio, ni oído oyó, Ni han subido en corazón de
+                hombre,
+                Son las que Dios ha preparado para los que le aman. Pero Dios nos las reveló a nosotros por el
+                Espíritu;
+                porque el Espíritu todo lo escudriña, aun lo profundo de Dios…</p>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Visitanos en nuestras redes sociales</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/share/g/1ELEEQDdVt/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://soundcloud.com/talmid-yisrael" target="_blank"><i class="fab fa-soundcloud"></i></a>
+            <a href="https://www.instagram.com/untranscriptor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@estudiantesdelabiblia1059" target="_blank"><i
+                    class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
